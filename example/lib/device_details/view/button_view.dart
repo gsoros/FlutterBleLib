@@ -11,9 +11,7 @@ class ButtonView extends StatelessWidget {
     return Expanded(
       child: Padding(
         padding: const EdgeInsets.all(2.0),
-        child: RaisedButton(
-          color: Colors.blue,
-          textColor: Colors.white,
+        child: ElevatedButton(
           child: Text(_text),
           onPressed: action,
         ),
