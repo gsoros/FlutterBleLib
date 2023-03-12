@@ -92,7 +92,7 @@ public class FlutterBleLibPlugin implements MethodCallHandler {
 
     @Override
     public void onMethodCall(MethodCall call, Result result) {
-        Log.d(TAG, "on native side observed method: " + call.method);
+        // Log.d(TAG, "on native side observed method: " + call.method);
         for (CallDelegate delegate : delegates) {
             if (delegate.canHandle(call)) {
                 delegate.onMethodCall(call, result);
